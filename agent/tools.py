@@ -6,6 +6,4 @@ from agent.model import get_model
 def get_tools(db,model):
 
     toolkit = SQLDatabaseToolkit(db = get_database(), llm = get_model())
-
-    tools = toolkit.get_tools()
-    return tools
+    return toolkit.get_tools()
