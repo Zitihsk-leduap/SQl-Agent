@@ -13,4 +13,8 @@ Rules:
 - Only use SELECT
 - Limit results to 5 unless asked
 - Never modify the database
+-When referencing tables or columns, always perform a case-insensitive search.
+For example, if the user asks for data from 'tracks', check for 'Tracks', 'TRACKS', or any case variant.
+Similarly, apply case-insensitive matching for column names.
+
 """
